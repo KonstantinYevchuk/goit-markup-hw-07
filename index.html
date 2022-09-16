@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
@@ -24,10 +23,10 @@
       <div class="container container__header">
         <nav class="navigation">
           <a href="index.html" class="logo"
-            >Web<span class="logo logo--black">Studio</span>
+            >Web<span class="logo logo_black">Studio</span>
           </a>
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link navigation__link--current">Студія</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link navigation__link_current">Студія</a></li>
             <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
             <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
           </ul>
@@ -126,9 +125,9 @@
           </ul>
         </div>
       </section>
-      <section class="section section--work">
+      <section class="section section__work">
         <div class="container">
-          <h2 class="section__title section__title--position">Чим ми займаємося</h2>
+          <h2 class="section__title section__title_position">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__item">
               <div class="work-list__thumb">
@@ -163,9 +162,9 @@
           </ul>
         </div>
       </section>
-      <section class="section section-team--color">
+      <section class="section section-team_color">
         <div class="container">
-          <h2 class="section__title section__title--position">Наша команда</h2>
+          <h2 class="section__title section__title_position">Наша команда</h2>
           <ul class="list-team">
             <li class="list-team__item">
               <img
@@ -420,7 +419,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section__title section__title--position">Постійні клієнти</h2>
+          <h2 class="section__title section__title_position">Постійні клієнти</h2>
           <ul class="list-clients">
             <li class="list-clients__item">
               <a class="list-clients__link" href="">
@@ -470,10 +469,10 @@
     </main>
     <!-- Підвал -->
     <footer class="footer">
-      <div class="container container--position">
-        <div>
-          <a href="index.html" class="logo logo--position"
-            >Web<span class="logo logo--white">Studio</span>
+      <div class="container container_position">
+        <div class="contianer-contacts">
+          <a href="index.html" class="logo logo_position"
+            >Web<span class="logo logo_white">Studio</span>
           </a>
           <address class="footer-contacts">
             <ul class="footer-contacts__list">
@@ -487,12 +486,12 @@
                 >
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contacts__link footer-contacts__link--color" href="mailto:info@devstudio.com">
+                <a class="footer-contacts__link footer-contacts__link_color" href="mailto:info@devstudio.com">
                   info@devstudio.com</a
                 >
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contacts__link footer-contacts__link--color" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="footer-contacts__link footer-contacts__link_color" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -550,8 +549,8 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
-          <p class="footer-form__name">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+        <div class="footer-form-block">
+          <p class="footer-form-block__name">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
           <form class="footer-form" name="form-footer" autocomplete="on">
             <label for="user-email">
               <input
@@ -564,7 +563,7 @@
             /></label>
             <button type="submit" class="button form__button">
               Підписатися
-              <svg class="form-button__icon">
+              <svg class="form__button_icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

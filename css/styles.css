@@ -540,6 +540,11 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .modal-window {
   position: absolute;
   width: 528px;
@@ -573,13 +578,6 @@ header {
 .modal-window__button:focus {
   fill: var(--accent-col);
 }
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-/* Form */
 .modal-window__name {
   font-size: 20px;
   line-height: 1.15;
@@ -589,6 +587,8 @@ header {
   margin-bottom: 12px;
   color: var(--main-col);
 }
+/* Form */
+
 .field-label { 
   display: block;
   margin-bottom: 10px;
@@ -712,11 +712,7 @@ header {
 }
 
 /* Main */
-.section-main {
-  background-color: var(--main-back);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .button-nav {
   display: flex;
   justify-content: center;
